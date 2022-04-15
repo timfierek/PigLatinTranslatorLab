@@ -1,0 +1,46 @@
+
+/**
+ * 
+ * @author Tim Fierek
+ *
+ */
+public class PigLatin {
+
+	public static void main(String[] args) {
+		testPigLatin();
+	}
+	
+	public static String translate(String w){
+		return w;
+	}
+	
+	public static void testPigLatin() {
+		// Test with words starting with vowels
+		System.out.println("Tests for words that start with vowels: ");
+		System.out.println("translate(\"yellow\") Expected: yellowway --> Actual: " + translate("yellow"));
+		System.out.println("translate(\"ace\") Expected: aceway --> Actual: " + translate("ace"));
+		System.out.println("translate(\"eagle\") Expected: eagleway --> Actual: " + translate("eagle"));
+		System.out.println("translate(\"indigo\") Expected: indigoway --> Actual: " + translate("indigo"));
+		System.out.println("translate(\"uncle\") Expected: uncleway --> Actual: " + translate("uncle"));
+		
+		// Test with words starting with one consonant
+		System.out.println("\nTests for words that start with one consonant: ");
+		System.out.println("translate(\"pain\") Expected: ainpay --> Actual: " + translate("pain"));
+		System.out.println("translate(\"turn\") Expected: urntay --> Actual: " + translate("turn"));
+
+		// Test with words starting with two consonant
+		System.out.println("\nTest for word that starts with two consonants: ");
+		System.out.println("translate(\"knowledge\") Expected: owledgeknay --> Actual: " + translate("knowledge"));
+		
+		// Test with words starting with three consonant
+		System.out.println("\nTest for word that starts with three consonants: ");
+		System.out.println("translate(\"school\") Expected: oolschay --> Actual: " + translate("school"));
+
+		// Test for word that isn't lower case
+		System.out.println("\nTest for word isn't all lowercase: ");
+		System.out.println("translate(\"HeLlO\") Expected: ellohay --> Actual: " + translate("HeLlO"));
+	}
+	
+	
+
+}
