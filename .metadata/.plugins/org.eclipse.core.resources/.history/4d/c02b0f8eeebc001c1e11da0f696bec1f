@@ -1,0 +1,35 @@
+package test;
+
+import static org.junit.jupiter.api.Assertions.*;
+import com.myproject.PigLatin;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+class PigLatinTest {
+
+	/*
+	 * @BeforeAll static void setUpBeforeClass() throws Exception { }
+	 * 
+	 * @AfterAll static void tearDownAfterClass() throws Exception { }
+	 */
+
+	@Test
+	void testVowels() {
+		assertEquals("octagonway", PigLatin.translate("octagon"));
+	}
+	
+	void testSingleConsonant() {
+		
+	}
+	
+	void testDoubleConsonant() {
+		
+	}
+	
+	void testTripleConsonant() {
+		
+	}
+
+}
