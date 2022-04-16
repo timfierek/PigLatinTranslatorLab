@@ -1,0 +1,10 @@
+package com.myproject;
+
+public class PigLatinPrompt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

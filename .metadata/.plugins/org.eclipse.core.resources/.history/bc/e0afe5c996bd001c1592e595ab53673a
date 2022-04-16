@@ -1,0 +1,39 @@
+package com.myproject;
+
+import java.util.Scanner;
+
+/**
+ * PigLatinPrompt uses the translate() method from PigLatin.java
+ * to take in user input from the console and then translates it
+ * to Pig Latin
+ * 
+ * @author Tim Fierek
+ *
+ */
+public class PigLatinPrompt {
+
+	private static Scanner in;
+	
+	public static void main(String[] args) {
+		in = new Scanner(System.in);
+		System.out.println(" Welcome to Tim's Pig Latin Translator!\n"
+				+ "========================================");
+		
+		promptInput();
+		String word = in.nextLine();
+		printTranslation(word, word);
+		
+		in.close();
+		
+	}
+	
+	private static void promptInput() {
+		System.out.print("\nEnter the word or phrase you would like translated: ");
+	}
+	
+	private static void printTranslation(String orig, String trans) {
+		System.out.printf("%n%13s%s%n", "Original: ", orig);
+		System.out.printf("%13s%s%n", "Translated: ", trans);
+	}
+
+}

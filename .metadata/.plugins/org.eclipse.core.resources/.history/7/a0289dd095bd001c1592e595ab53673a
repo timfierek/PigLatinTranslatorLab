@@ -8,7 +8,7 @@ package com.myproject;
 public class PigLatin {
 
 	public static void main(String[] args) {
-		//testPigLatin();
+		testPigLatin();
 	}
 	
 	/**
