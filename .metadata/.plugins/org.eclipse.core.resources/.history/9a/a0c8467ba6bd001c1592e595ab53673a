@@ -9,6 +9,11 @@ public class PigLatin {
 
 	public static void main(String[] args) {
 		//testPigLatin();
+		System.out.println(hasNumOrSymbol("63892572"));
+		System.out.println(hasNumOrSymbol(" ghsdl&shg)"));
+		System.out.println(hasNumOrSymbol("(hello)"));
+		System.out.println(hasNumOrSymbol("nosymbols"));
+
 	}
 	
 	/**
@@ -49,16 +54,15 @@ public class PigLatin {
 	}
 	
 	/**
-	 * Takes a string and removes anything except letters and the ' character
 	 * 
-	 * @param word string to be stripped of all punctuation, symbols, and numbers
-	 * @return String without any 
+	 * @param word
+	 * @return
 	 */
 	private static String stripPunctuation(String word) {
 		char[] letters = (word.strip()).toCharArray();
 		String result = "";
 		for(int i = 0; i < letters.length; i++) {
-			if(Character.isAlphabetic(letters[i]) || letters[i] == '\'') {
+			if(Character.isAlphabetic(letters[i])) {
 				result += Character.toString(letters[i]);
 			}
 		}
@@ -94,29 +98,19 @@ public class PigLatin {
 	 * @return a String that is w changed into pig Latin
 	 */
 	public static String translate(String w){
+		String word = w.toLowerCase();
+		int indexOfVowel = firstVowel(word);
 		
-		String[] words = w.split(" ");
-		String finalPhrase = "";
-
-		for (String s : words) {
-
-			if (hasNumOrSymbol(s)) {
-				finalPhrase += (s + " ");
-				continue;
-			} 
-			
-			String word = stripPunctuation(s.toLowerCase());
-			int indexOfVowel = firstVowel(word);
-			
-			if (indexOfVowel == -1) {
-				finalPhrase += (word + "way" + " ");
-			} else if (indexOfVowel == 0) {
-				finalPhrase += (word + "way" + " ");
-			} else {
-				finalPhrase += (word.substring(indexOfVowel) + word.substring(0, indexOfVowel) + "ay" + " ");
-			}
+		// For the very few words with no vowels or empty string
+		if(indexOfVowel == -1) {
+			return (word + "way");
 		}
-		return finalPhrase;
+		else if(indexOfVowel == 0) {
+			return (word + "way");
+		}
+		else {
+			return (word.substring(indexOfVowel) + word.substring(0,indexOfVowel) + "ay");
+		}		
 	}
 	
 	private static void testPigLatin() {

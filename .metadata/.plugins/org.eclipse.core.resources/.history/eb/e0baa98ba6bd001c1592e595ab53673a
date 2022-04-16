@@ -9,6 +9,8 @@ public class PigLatin {
 
 	public static void main(String[] args) {
 		//testPigLatin();
+
+		System.out.println(translate("hello in pig latin"));
 	}
 	
 	/**
