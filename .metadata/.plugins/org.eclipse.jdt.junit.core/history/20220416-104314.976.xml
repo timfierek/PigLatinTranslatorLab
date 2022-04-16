@@ -1,10 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="PigLatinTest" project="PigLatinLab" tests="1" started="1" failures="1" errors="0" ignored="0">
-  <testsuite name="test.PigLatinTest" time="0.0" displayname="PigLatinTest" uniqueid="[engine:junit-jupiter]/[class:test.PigLatinTest]">
-    <testcase name="testVowels" classname="test.PigLatinTest" time="0.0" displayname="testVowels()" uniqueid="[engine:junit-jupiter]/[class:test.PigLatinTest]/[method:testVowels()]">
-      <failure>org.opentest4j.AssertionFailedError: Not yet implemented&#13;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:39)&#13;
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:134)&#13;
-	at test.PigLatinTest.testVowels(PigLatinTest.java:21)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PigLatinTest (1)" project="PigLatinLab" tests="5" started="5" failures="1" errors="0" ignored="0">
+  <testsuite name="com.myproject.test.PigLatinTest" time="0.013" displayname="PigLatinTest" uniqueid="[engine:junit-jupiter]/[class:com.myproject.test.PigLatinTest]">
+    <testcase name="testDoubleConsonant" classname="com.myproject.test.PigLatinTest" time="0.008" displayname="testDoubleConsonant()" uniqueid="[engine:junit-jupiter]/[class:com.myproject.test.PigLatinTest]/[method:testDoubleConsonant()]"/>
+    <testcase name="testTripleConsonant" classname="com.myproject.test.PigLatinTest" time="0.001" displayname="testTripleConsonant()" uniqueid="[engine:junit-jupiter]/[class:com.myproject.test.PigLatinTest]/[method:testTripleConsonant()]"/>
+    <testcase name="testLowerCase" classname="com.myproject.test.PigLatinTest" time="0.0" displayname="testLowerCase()" uniqueid="[engine:junit-jupiter]/[class:com.myproject.test.PigLatinTest]/[method:testLowerCase()]"/>
+    <testcase name="testSingleConsonant" classname="com.myproject.test.PigLatinTest" time="0.001" displayname="testSingleConsonant()" uniqueid="[engine:junit-jupiter]/[class:com.myproject.test.PigLatinTest]/[method:testSingleConsonant()]"/>
+    <testcase name="testVowels" classname="com.myproject.test.PigLatinTest" time="0.003" displayname="testVowels()" uniqueid="[engine:junit-jupiter]/[class:com.myproject.test.PigLatinTest]/[method:testVowels()]">
+      <failure>
+        <expected>indigowa</expected>
+        <actual>indigoway</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;indigowa&gt; but was: &lt;indigoway&gt;&#13;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)&#13;
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)&#13;
+	at com.myproject.test.PigLatinTest.testVowels(PigLatinTest.java:14)&#13;
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
@@ -75,7 +85,8 @@
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
 &#13;
-</failure>
+
+      </failure>
     </testcase>
   </testsuite>
 </testrun>

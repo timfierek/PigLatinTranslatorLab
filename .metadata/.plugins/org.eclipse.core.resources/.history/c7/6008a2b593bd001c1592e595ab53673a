@@ -11,7 +11,7 @@ class PigLatinTest {
 		assertEquals("octagonway", PigLatin.translate("octagon"));
 		assertEquals("aceway", PigLatin.translate("ace"));
 		assertEquals("eagleway", PigLatin.translate("eagle"));
-		assertEquals("indigoway", PigLatin.translate("indigo"));
+		assertEquals("indigowa", PigLatin.translate("indigo"));
 		assertEquals("uncleway", PigLatin.translate("uncle"));
 	}
 	
