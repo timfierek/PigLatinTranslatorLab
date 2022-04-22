@@ -112,7 +112,7 @@ public class PigLatin {
 				finalPhrase += (word.substring(indexOfVowel) + word.substring(0, indexOfVowel) + "ay" + " ");
 			}
 		}
-		return finalPhrase.trim();
+		return finalPhrase;
 	}
 	
 }

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="PigLatinTest (1)" project="PigLatinLab" tests="5" started="5" failures="0" errors="0" ignored="0">
-  <testsuite name="com.myproject.test.PigLatinTest" time="0.0" displayname="PigLatinTest" uniqueid="[engine:junit-jupiter]/[class:com.myproject.test.PigLatinTest]">
-    <testcase name="testDoubleConsonant" classname="com.myproject.test.PigLatinTest" time="0.0" displayname="testDoubleConsonant()" uniqueid="[engine:junit-jupiter]/[class:com.myproject.test.PigLatinTest]/[method:testDoubleConsonant()]"/>
-    <testcase name="testTripleConsonant" classname="com.myproject.test.PigLatinTest" time="0.0" displayname="testTripleConsonant()" uniqueid="[engine:junit-jupiter]/[class:com.myproject.test.PigLatinTest]/[method:testTripleConsonant()]"/>
-    <testcase name="testLowerCase" classname="com.myproject.test.PigLatinTest" time="0.0" displayname="testLowerCase()" uniqueid="[engine:junit-jupiter]/[class:com.myproject.test.PigLatinTest]/[method:testLowerCase()]"/>
-    <testcase name="testSingleConsonant" classname="com.myproject.test.PigLatinTest" time="0.0" displayname="testSingleConsonant()" uniqueid="[engine:junit-jupiter]/[class:com.myproject.test.PigLatinTest]/[method:testSingleConsonant()]"/>
-    <testcase name="testVowels" classname="com.myproject.test.PigLatinTest" time="0.0" displayname="testVowels()" uniqueid="[engine:junit-jupiter]/[class:com.myproject.test.PigLatinTest]/[method:testVowels()]"/>
-  </testsuite>
-</testrun>

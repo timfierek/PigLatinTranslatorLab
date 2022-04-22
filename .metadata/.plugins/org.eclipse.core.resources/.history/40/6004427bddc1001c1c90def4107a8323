@@ -56,15 +56,5 @@ class PigLatinTest {
 	void testUpperCase() {
 		assertEquals("HeLlO@@", PigLatin.translate("HeLlO@@"));
 	}
-	
-	@Test
-	void testContraction() {
-		assertEquals("an'tcay", PigLatin.translate("can't"));
-	}
-	
-	@Test
-	void testEntirePhrase() {
-		assertEquals("anslatetray away olewhay asephray", PigLatin.translate("translate a whole phrase"));
-	}
 
 }
